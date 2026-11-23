@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.frame {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(188deg, #fefefe, #af68fac4);
+  display: flex;
+  flex-direction: column;
+}
+.navbar-container {
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(224, 153, 246, 0.292);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar-container .nav-brand img {
+  width: 50px;
+  margin: 5px;
+  user-select: none;
+}
+.navbar-container .nav-brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+}
+.nav-brand h3 {
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav-links ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+.nav-links ul li {
+  padding: 15px;
+  cursor: pointer;
+}
+@media screen and (max-width: 711px) {
+  .nav-links {
+    visibility: hidden;
+  }
+}
+li:hover {
+  color: red;
+  font-weight: 500;
+}
+@media screen and (min-width: 711px) {
+  .side-menu-icon {
+    display: none;
+  }
+}
+.side-menu-icon img {
+  width: 15px;
+  height: fit-content;
+  margin-right: 10px;
+}
+.joke-frame {
+  height: max-content;
+  margin-top: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joke-container {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  flex-grow: unset;
+}
+.next-btn {
+  margin: 20px;
+  width: 300px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+  border: 2px solid blueviolet;
+  cursor: pointer;
+  background: linear-gradient(
+    40deg,
+    rgb(92, 92, 184),
+    rgb(172, 100, 255),
+    rgb(54, 126, 242),
+    rgb(172, 114, 237)
+  );
+  color: white;
+  font-weight: 600;
+}
+
+.next-btn:hover {
+  background: #5e1fea;
+  color: rgb(255, 195, 195);
+}
+.meme-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+}
